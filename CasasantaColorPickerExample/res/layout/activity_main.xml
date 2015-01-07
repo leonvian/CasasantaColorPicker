@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.lvc.casasantacolorpicker" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- -->
+    <LinearLayout
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="#babdcc" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hello_world"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_quadrado_arredondado_borda_cinza"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Custom Colors"
+            android:textColor="@android:color/black" />
+
+        <com.lvc.colorpicker.CasasantaColorPicker
+            android:id="@+id/casasanta_color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:colors="@array/leon_choice_colors"
+            app:mode="few_aleatory_colors" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_quadrado_arredondado_borda_cinza"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Few Aleatory Colors"
+            android:textColor="@android:color/black" />
+
+        <com.lvc.colorpicker.CasasantaColorPicker
+            android:id="@+id/casasanta_color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mode="few_aleatory_colors" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_quadrado_arredondado_borda_cinza"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Aleatory Colors"
+            android:textColor="@android:color/black" />
+
+        <com.lvc.colorpicker.CasasantaColorPicker
+            android:id="@+id/casasanta_color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mode="medium_group_aleatory_colors" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_quadrado_arredondado_borda_cinza"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Several Aleatory Colors"
+            android:textColor="@android:color/black" />
+
+        <com.lvc.colorpicker.CasasantaColorPicker
+            android:id="@+id/casasanta_color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mode="several_aleatory_colors" />
+    </LinearLayout>
+
+</LinearLayout>

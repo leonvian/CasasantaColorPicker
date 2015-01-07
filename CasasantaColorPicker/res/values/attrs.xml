@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyCustomColorPicker">
+        <attr name="fancyColor" format="string" />
+        <attr name="action" format="string" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="CasasantaColorPicker">
+        <attr name="colors" format="reference" />
+        <attr name="mode" >
+            <enum name="few_aleatory_colors" value="1" />
+            <enum name="medium_group_aleatory_colors" value="2" />
+            <enum name="several_aleatory_colors" value="3" />
+            <enum name="primary_colors" value="4" />
+            
+            <enum name="greens_tonalitys" value="5" />
+            <enum name="red_tonalitys" value="6" />
+            <enum name="blue_tonalitys" value="7" />
+        </attr>
+         
+    </declare-styleable>
+
+</resources>
